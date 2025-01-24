@@ -1,0 +1,254 @@
+{% extends 'verbs_app/layout.html' %}
+
+{% block content %}
+
+    {% for verb in verbs %}
+    <div class="d-flex justify-content-center mt-4">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>You searched for verb "{{ verb }}"</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Die Aufgabe des Verbs ist, <cite title="Source Title">eine Handlung auszudrücken.</cite>
+            </figcaption>
+          </figure>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-striped table-hover table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">Prasent verb "{{ verb }}"</th>
+                        <th scope="col"></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Ich</th>
+                        <td>{{ verb.prasent_ich }} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Du</th>
+                        <td>{{ verb.prasent_du }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Er/Sie/Es</th>
+                        <td>{{ verb.prasent_es }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wir</th>
+                        <td>{{ verb.prasent_wir }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ihr</th>
+                        <td>{{ verb.prasent_ihr }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sie</th>
+                        <td>{{ verb.prasent_sie }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <div class="col-md-6">
+        <table class="table table-striped table-hover table-bordered table-sm">
+            <thead>
+            <tr>
+                <th scope="col">Perfekt verb "{{ verb }}"</th>
+                <th scope="col"></th>
+        
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Ich</th>
+                <td>{{ verb.perfekt_ich }} </td>
+            </tr>
+            <tr>
+                <th scope="row">Du</th>
+                <td>{{ verb.perfekt_du }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Er/Sie/Es</th>
+                <td>{{ verb.perfekt_es }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Wir</th>
+                <td>{{ verb.perfekt_wir }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Ihr</th>
+                <td>{{ verb.perfekt_ihr }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Sie</th>
+                <td>{{ verb.perfekt_sie }}</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+    <table class="table table-striped table-hover table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Prateritum verb "{{ verb }}"</th>
+            <th scope="col"></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Ich</th>
+            <td>{{ verb.prateritum_ich }} </td>
+        </tr>
+        <tr>
+            <th scope="row">Du</th>
+            <td>{{ verb.prateritum_du }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Er/Sie/Es</th>
+            <td>{{ verb.prateritum_es }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Wir</th>
+            <td>{{ verb.prateritum_wir }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Ihr</th>
+            <td>{{ verb.prateritum_ihr }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Sie</th>
+            <td>{{ verb.prateritum_sie }}</td>
+        </tr>
+    
+        </tbody>
+    </table>
+    </div>
+    <div class="col-md-6">
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">Plusquamperfekt verb "{{ verb }}"</th>
+                <th scope="col"></th>
+        
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Ich</th>
+                <td>{{ verb.plusquamperfekt_ich }} </td>
+            </tr>
+            <tr>
+                <th scope="row">Du</th>
+                <td>{{ verb.plusquamperfekt_du }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Er/Sie/Es</th>
+                <td>{{ verb.plusquamperfekt_es }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Wir</th>
+                <td>{{ verb.plusquamperfekt_wir }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Ihr</th>
+                <td>{{ verb.plusquamperfekt_ihr }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Sie</th>
+                <td>{{ verb.plusquamperfekt_sie }}</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Futur I verb "{{ verb }}"</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Ich</th>
+                        <td>{{ verb.futur1_ich }} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Du</th>
+                        <td>{{ verb.futur1_du }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Er/Sie/Es</th>
+                        <td>{{ verb.futur1_es }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wir</th>
+                        <td>{{ verb.futur1_wir }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ihr</th>
+                        <td>{{ verb.futur1_ihr }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sie</th>
+                        <td>{{ verb.futur1_sie }}</td>
+                    </tr>      
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Futur II verb "{{ verb }}"</th>
+                    <th scope="col"></th>
+        
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Ich</th>
+                        <td>{{ verb.futur2_ich }} </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Du</th>
+                        <td>{{ verb.futur2_du }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Er/Sie/Es</th>
+                        <td>{{ verb.futur2_es }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wir</th>
+                        <td>{{ verb.futur2_wir }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ihr</th>
+                        <td>{{ verb.futur2_ihr }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sie</th>
+                        <td>{{ verb.futur2_sie }}</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    {% endfor %}
+
+
+
+{% endblock content %}

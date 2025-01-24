@@ -1,0 +1,25 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg" style="background-color: hsla(167, 14.80%, 88.00%, 0.15);">
+  <div class="container-fluid">
+      <div class="navbar-content">
+          <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+              <img src='{% static 'verbs_app/navbarico.png' %}' width="24" height="24" class="me-2">
+              Verbly
+          </a>
+          <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+                  
+                  
+              </ul>
+          </div>
+         
+      </div>
+  </div>
+</nav>

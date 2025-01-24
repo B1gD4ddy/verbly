@@ -1,0 +1,34 @@
+{% load static %}
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+    <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <a class="navbar-brand" href="{% url 'home' %}"><img id="Verbly Logo"
+              src="{% static 'verbs_app/verbly_logo.png' %}" alt="Verbly Logo" draggable="false" height="55" /> Verbly</a>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-center mx-auto">
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'home' %}"><i class="bi bi-house-heart-fill" style="font-size: 1rem; color: teal;"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'home' %}"><i class="bi bi-bag-heart-fill" style="font-size: 1rem; color: orange;"></i> Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'home' %}"><i class="bi bi-person-lines-fill" style="font-size: 1rem; color: purple;"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br><br><br><br><br>
+  <!-- Navbar -->
